@@ -161,7 +161,7 @@ section img {
         height: 99vh;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: (8; 1fr);
+        grid-template-rows: repeat (8, 1fr);
         grid-template-areas:
             "header"
             "section-1"
@@ -177,7 +177,7 @@ section img {
             height: 99vh;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: (8; 1fr);
+            grid-template-rows: repeat (8, 1fr);
             grid-template-areas:
                 "header2"
                 "section1"
@@ -190,5 +190,18 @@ section img {
         .footer2 {
             background-color: brown;
        }
+}
+/*agregando transformaciones a inicio*/
+.section-1 :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+
+}
+.section-2 :hover{
+    transform: rotate(10deg);
+}
+.section-3 :hover{
+    transform: translate(30px, 30px);
 }
 
